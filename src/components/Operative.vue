@@ -167,13 +167,25 @@ export default {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  display: flex; /* Use Flexbox to arrange buttons horizontally */
+  gap: 5px; /* Add spacing between buttons */
 }
 
 .controls button {
-  background-color: transparent;
+  background-color: grey;
   border: none;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 5px;
+  width: 25px; /* Set width */
+  height: 25px; /* Set height */
+  border-radius: 50%; /* Make the button circular */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button:hover {
+  background-color: darkgrey; /* Slightly darker on hover */
 }
 </style>
