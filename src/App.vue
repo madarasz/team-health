@@ -3,7 +3,7 @@
     <div class="teams-container">
       <div class="team">
         <h2>{{ store.team1Name }}</h2>
-        <div v-for="operative in store.operatives" :key="operative.id">
+        <div v-for="operative in sortedOperatives" :key="operative.id">
           <!-- Using OperativeEntry component -->
           <OperativeEntry
             v-if="operative.team == 1"
@@ -19,7 +19,7 @@
       </div>
       <div class="team">
         <h2>{{ store.team2Name }}</h2>
-        <div v-for="operative in store.operatives" :key="operative.id">
+        <div v-for="operative in sortedOperatives" :key="operative.id">
           <!-- Using OperativeEntry component -->
           <OperativeEntry
             v-if="operative.team == 2"
@@ -49,12 +49,20 @@
 </style>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
 import { useOperativeStore } from '@/stores/operative-store'
 import OperativeEntry from './components/Operative.vue'
 
 // Initialize the Pinia store
 const store = useOperativeStore()
+
+const sortedOperatives = computed(() => {
+  return store.operatives.slice().sort((a, b) => {
+    const aActive = a.active !== false // Treat undefined as true
+    const bActive = b.active !== false // Treat undefined as true
+    return bActive - aActive // Active (true or undefined) comes before inactive (false)
+  })
+})
 
 // Load team data when the component is mounted
 onMounted(() => {

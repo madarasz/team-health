@@ -5,6 +5,7 @@ export const useOperativeStore = defineStore('operativeStore', {
   state: () => ({
     team1Name: '',
     team2Name: '',
+    greatestWounds: 0,
     operatives: [] as OperativeModel[]
   }),
 
@@ -45,6 +46,11 @@ export const useOperativeStore = defineStore('operativeStore', {
               )
           )
         )
+        this.operatives.forEach((op) => {
+          if (this.greatestWounds < op.maxWounds) {
+            this.greatestWounds = op.maxWounds
+          }
+        })
 
         // You can also handle team2 if the JSON structure contains a second team
         // this.team2Name = data.team_2;

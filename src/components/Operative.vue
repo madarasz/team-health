@@ -65,7 +65,9 @@ export default {
       if (!this.active) {
         return 0
       }
-      return (this.currentWounds / this.maxWounds) * 100
+      //return (this.currentWounds / this.maxWounds) * 100
+      const operativeStore = useOperativeStore()
+      return (this.currentWounds / operativeStore.greatestWounds) * 100
     },
     healthColor() {
       if (this.currentWounds === this.maxWounds) {

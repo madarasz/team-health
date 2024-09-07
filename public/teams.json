@@ -53,67 +53,6 @@
       "maxWounds": 8
     },
     {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Devotee",
-      "maxWounds": 7
-    },
-    {
-      "name": "Mutant",
-      "maxWounds": 7,
-      "active": false
-    },
-    {
-      "name": "Mutant",
-      "maxWounds": 7,
-      "active": false
-    },
-    {
-      "name": "Mutant",
-      "maxWounds": 7,
-      "active": false
-    },
-    {
-      "name": "Mutant",
-      "maxWounds": 7,
-      "active": false
-    },
-    {
-      "name": "Mutant",
-      "maxWounds": 7,
-      "active": false
-    },
-    {
       "name": "Torment",
       "maxWounds": 13,
       "active": false
@@ -127,6 +66,67 @@
       "name": "Torment",
       "maxWounds": 13,
       "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
     }
   ]
 }
