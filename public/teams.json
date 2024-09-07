@@ -1,6 +1,6 @@
 {
   "team_1": "Intercessors",
-  "operatives": [
+  "operatives_1": [
     {
       "name": "Intercessor Sergeant",
       "description": "Bolt rifle, blessed bolts, scope",
@@ -8,15 +8,15 @@
       "leader": true
     },
     {
-      "name": "Assault Intercessor Grenadier",
+      "name": "Ass. Intercessor Grenadier",
       "maxWounds": 14
     },
     {
-      "name": "Assault Intercessor Warrior",
+      "name": "Ass. Intercessor Warrior",
       "maxWounds": 14
     },
     {
-      "name": "Assault Intercessor Warrior",
+      "name": "Ass. Intercessor Warrior",
       "maxWounds": 14
     },
     {
@@ -27,6 +27,106 @@
       "name": "Intercessor Warrior",
       "description": "blade, scope",
       "maxWounds": 14
+    }
+  ],
+  "team_2": "Chaos Cults",
+  "operatives_2": [
+    {
+      "name": "Cult Demagogue",
+      "maxWounds": 8,
+      "leader": true
+    },
+    {
+      "name": "Blessed Blade",
+      "maxWounds": 8
+    },
+    {
+      "name": "Blessed Blade",
+      "maxWounds": 8
+    },
+    {
+      "name": "Iconarch",
+      "maxWounds": 8
+    },
+    {
+      "name": "Mindwitch",
+      "maxWounds": 8
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Devotee",
+      "maxWounds": 7
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Mutant",
+      "maxWounds": 7,
+      "active": false
+    },
+    {
+      "name": "Torment",
+      "maxWounds": 13,
+      "active": false
+    },
+    {
+      "name": "Torment",
+      "maxWounds": 13,
+      "active": false
+    },
+    {
+      "name": "Torment",
+      "maxWounds": 13,
+      "active": false
     }
   ]
 }

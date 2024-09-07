@@ -16,7 +16,8 @@ export const useOperativeStore = defineStore('operativeStore', {
 
         // Assuming the data structure follows the format you mentioned
         this.team1Name = data.team_1
-        this.operatives = data.operatives.map(
+        this.team2Name = data.team_2
+        this.operatives = data.operatives_1.map(
           (operative: OperativeModel, index: number) =>
             new OperativeModel(
               index + 1, // Auto-generated ID for simplicity
@@ -26,8 +27,23 @@ export const useOperativeStore = defineStore('operativeStore', {
               operative.maxWounds,
               operative.description,
               operative.leader,
-              true // Set as active by default
+              operative.active
             )
+        )
+        this.operatives = this.operatives.concat(
+          data.operatives_2.map(
+            (operative: OperativeModel, index: number) =>
+              new OperativeModel(
+                index + 1 + data.operatives_1.length, // Auto-generated ID for simplicity
+                2,
+                operative.name,
+                operative.maxWounds,
+                operative.maxWounds,
+                operative.description,
+                operative.leader,
+                operative.active
+              )
+          )
         )
 
         // You can also handle team2 if the JSON structure contains a second team

@@ -13,6 +13,7 @@
       <div v-if="active" class="health">{{ currentWounds }}/{{ maxWounds }}</div>
     </div>
     <div v-if="hover" class="controls">
+      <button @click="switchActive()">S</button>
       <button v-if="active" @click="adjustHealth(-1)">-</button>
       <button v-if="active" @click="adjustHealth(1)">+</button>
     </div>
@@ -72,7 +73,7 @@ export default {
       } else if (this.currentWounds < this.maxWounds / 2) {
         return 'red'
       } else {
-        return 'yellow'
+        return 'coral'
       }
     },
     icon() {
@@ -97,6 +98,10 @@ export default {
         // Use the store's adjustWounds action, passing in the team number and the operative's ID
         operativeStore.adjustWounds(this.id, newHealth)
       }
+    },
+    switchActive() {
+      const operativeStore = useOperativeStore()
+      operativeStore.switchActive(this.id)
     }
   }
 }
@@ -104,6 +109,12 @@ export default {
 
 <style scoped>
 .operative {
+  color: white; /* The text color */
+  text-shadow:
+    -1px -1px 0 black,
+    /* Top-left */ 1px -1px 0 black,
+    /* Top-right */ -1px 1px 0 black,
+    /* Bottom-left */ 1px 1px 0 black; /* Bottom-right */
   position: relative;
   width: 300px;
   height: 30px;
@@ -136,18 +147,6 @@ export default {
   height: 20px;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.status-icon.wounded {
-  background-color: yellow;
-}
-
-.status-icon.dead {
-  background-color: red;
-}
-
-.status-icon.inactive {
-  background-color: gray;
 }
 
 .name {
