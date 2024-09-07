@@ -1,0 +1,32 @@
+{
+  "team_1": "Intercessors",
+  "operatives": [
+    {
+      "name": "Intercessor Sergeant",
+      "description": "Bolt rifle, blessed bolts, scope",
+      "maxWounds": 15,
+      "leader": true
+    },
+    {
+      "name": "Assault Intercessor Grenadier",
+      "maxWounds": 14
+    },
+    {
+      "name": "Assault Intercessor Warrior",
+      "maxWounds": 14
+    },
+    {
+      "name": "Assault Intercessor Warrior",
+      "maxWounds": 14
+    },
+    {
+      "name": "Intercessor Gunner",
+      "maxWounds": 14
+    },
+    {
+      "name": "Intercessor Warrior",
+      "description": "blade, scope",
+      "maxWounds": 14
+    }
+  ]
+}
